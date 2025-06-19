@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom List Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul.custom-list {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+        }
+
+        ul.custom-list li {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-left: 5px solid #007BFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        ul.custom-list li::before {
+            content: "✔"; /* Custom bullet */
+            color: green;
+            position: absolute;
+            left: -25px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Things to Do Today</h1>
+
+    <ul class="custom-list">
+        <li>Finish HTML project</li>
+        <li>Study CSS styling</li>
+        <li>Call client for feedback</li>
+        <li>Update project documentation</li>
+    </ul>
+
+</body>
+</html>
