@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .content {
+            width: 75%;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>My Website</h1>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Links or extra info here.</p>
+        </div>
+        <div class="content">
+            <h2>Main Content</h2>
+            <p>This is the main area of the website.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer &copy; 2025</p>
+    </div>
+
+</body>
+</html>
