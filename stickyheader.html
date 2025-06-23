@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sticky Header Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Sticky Header</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h3>Section 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lorem vel fermentum feugiat...</p>
+    </section>
+    <section>
+      <h3>Section 2</h3>
+      <p>Curabitur at libero nec urna sollicitudin lacinia. Integer varius nunc a lacus pharetra fermentum...</p>
+    </section>
+    <section>
+      <h3>Section 3</h3>
+      <p>Praesent mattis, sapien a iaculis sagittis, lacus arcu laoreet velit, ut dapibus est eros in erat...</p>
+    </section>
+    <section>
+      <h3>Section 4</h3>
+      <p>Fusce nec neque vel justo pretium faucibus. Suspendisse potenti. Etiam eget diam sit amet tortor...</p>
+    </section>
+  </main>
+
+</body>
+</html>
