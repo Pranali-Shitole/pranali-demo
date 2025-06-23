@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aside Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 3;
+      padding: 20px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-left: 2px solid #ddd;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      z-index: 100;
+    }
+
+    header {
+      top: 0;
+    }
+
+    footer {
+      bottom: 0;
+    }
+    body > main, body > aside {
+      margin-top: 60px; 
+      margin-bottom: 40px; 
+    }
+    @media (max-width: 700px) {
+      body {
+        flex-direction: column;
+      }
+      aside {
+        border-left: none;
+        border-top: 2px solid #ddd;
+        margin-top: 20px;
+      }
+      body > main, body > aside {
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <main>
+    <h2>Main Content</h2>
+    <p>This is the main content area of the page. It takes up most of the horizontal space.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus at risus feugiat malesuada.</p>
+  </main>
+
+  <aside>
+    <h3>Sidebar</h3>
+    <p>This is the side content, like related links or ads.</p>
+    <ul>
+      <li><a href="#">Related Link 1</a></li>
+      <li><a href="#">Related Link 2</a></li>
+      <li><a href="#">Related Link 3</a></li>
+    </ul>
+  </aside>
+
+  <footer>
+    &copy; 2025 My Website
+  </footer>
+
+</body>
+</html>
