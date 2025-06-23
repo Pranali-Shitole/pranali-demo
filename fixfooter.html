@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fixed Footer Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding-bottom: 60px; 
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <main>
+    <h2>Welcome!</h2>
+    <p>This is a page with a fixed footer. Scroll down if there's enough content to see the footer stays in place.</p>
+    <p style="margin-bottom: 1000px;">Extra space to demonstrate scrolling...</p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Website. All rights reserved.
+  </footer>
+
+</body>
+</html>
