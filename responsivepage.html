@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    .content, .sidebar {
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .content {
+      flex: 2;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: #ddd;
+    }
+
+    /* Tablet (width <= 768px) */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .content, .sidebar {
+        flex: 1 0 100%;
+      }
+    }
+
+    /* Mobile (width <= 480px) */
+    @media (max-width: 480px) {
+      header, footer {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+      }
+
+      .content, .sidebar {
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Responsive Website</h1>
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <h2>Main Content</h2>
+      <p>This is the main content area. On smaller screens, this section stacks above the sidebar.</p>
+    </div>
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>This is the sidebar area. It will stack below the content on smaller screens.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>
