@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meter Tag Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        meter {
+            width: 300px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Battery Level</h2>
+    <p>Current battery level: 70%</p>
+    <meter value="0.7" min="0" max="1">70%</meter>
+
+    <h2>Storage Usage</h2>
+    <p>Disk usage: 8 GB of 16 GB</p>
+    <meter value="8" min="0" max="16">8 GB</meter>
+
+    <h2>Exam Score</h2>
+    <p>Student scored 45 out of 100</p>
+    <meter value="45" min="0" max="100" low="40" high="80" optimum="90">45%</meter>
+
+</body>
+</html>
