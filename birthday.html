@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+
+    .card h1 {
+      font-size: 2.5em;
+      color: #ff4081;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      color: #555;
+      margin: 20px 0;
+    }
+
+    .balloons {
+      font-size: 2em;
+      animation: float 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-style: italic;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="balloons">🎈🎉🎂🎁🎊</div>
+    <h1>Happy Birthday!</h1>
+    <p>Wishing you a day filled with love, joy, and laughter. May all your dreams come true!</p>
+    <div class="balloons">🎊🎁🎂🎉🎈</div>
+    <p class="signature">– From Your Friend 😊</p>
+  </div>
+
+</body>
+</html>
