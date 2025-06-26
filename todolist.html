@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My To-Do List</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 15px;
+      transform: scale(1.2);
+    }
+
+    label {
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>📝 My To-Do List</h2>
+    <ul>
+      <li>
+        <input type="checkbox" id="task1">
+        <label for="task1">Buy groceries</label>
+      </li>
+      <li>
+        <input type="checkbox" id="task2">
+        <label for="task2">Finish homework</label>
+      </li>
+      <li>
+        <input type="checkbox" id="task3">
+        <label for="task3">Call Mom</label>
+      </li>
+      <li>
+        <input type="checkbox" id="task4">
+        <label for="task4">Clean the room</label>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 My To-Do List | HTML Only Version
+  </footer>
+
+</body>
+</html>
